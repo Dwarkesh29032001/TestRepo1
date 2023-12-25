@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Student Form</title>
+
+    <link rel="stylesheet" href="../HTML/Form_properties.css" >
+
+    <Style>
+
+        #D1{
+            text-align: center;
+            color: black;
+            padding: 0px 0px 20px 0px ;
+        }
+        #D2{
+            text-align: center;
+            color: black;
+            padding: 0px 0px 20px 0px ;
+        }
+        #D3{
+            text-align: center;
+            color: black;
+            padding: 0px 0px 20px 0px ;
+        }
+        #D4{
+            text-align: center;
+            color: black;
+            padding: 0px 0px 10px 0px ;
+        }
+        #D5{
+            text-align: center;
+            color: black;
+            padding: 0px 0px 10px 0px ;
+        }
+        #D6{
+            text-align: center;
+            color: black;
+            padding: 0px 0px 10px 0px ;
+        }
+        #D7{
+            text-align: center;
+            color: black;
+            padding: 0px 0px 10px 0px ;
+        }
+        #D8{
+            text-align: center;
+            color: black;
+            padding: 0px 0px 10px 0px ;
+           
+        }
+        #I1:hover{
+            background-color:red ;
+        }
+        
+        #D9{
+            text-align: center;
+            color: black;
+            padding: 0px 0px 10px 0px ;
+        }
+        #D10{
+            text-align: center;
+            color: black;
+            padding: 0px 0px 10px 0px ;
+        }
+
+        #D11{
+            text-align: center;
+            color: black;
+            padding: 0px 0px 10px 0px ;   
+        }
+        button:hover{
+                background-color: yellow;
+            }
+
+        #I2:hover{
+            background-color: gray;
+        }
+        nav a{
+            text-decoration: none;
+            color:black;
+        }
+        nav a:hover{
+            background-color:gray;
+            border-radius: 10px;
+        }
+        
+        
+
+    </Style>
+</head>
+<body  style="background-color: lightblue;" >
+   <header><nav  style=" padding-left: 5px; font-size: 20px;background-color:lightblue;">
+    <a href="">Home</a>
+        <a href="">Student Login</a>
+        <a href="">Student Register</a>
+        <a href="">Student Result</a>
+        <a href="">Forget Password</a>
+    </nav> 
+    </header>
+
+    <h2 style="color: blue; text-align: center; border-style: dotted; border-width: 5px ; font-style: italic;">Student Registration Form</h2>
+    
+        <form>
+        <div id="D1">
+            <label for="fname">Enter Your Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter your name here" required> 
+        </div>
+        <div id="D2">
+            <label for="email">Enter Your Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your password here" minlength="2" maxlength="20" required> 
+        </div>
+        <div id="D3">
+            <label for="pwd">Enter Your Password:</label>
+            <input type="password" name="pwd" id="pwd" placeholder="Enter your password here" pattern="^[a-zA-z]{2,20}$" required> 
+        </div>
+        <div id="D4">
+            <label for="gender" required>Select Your Gender:</label>
+            <input type="radio" name="gender" value="male">MALE
+            <input type="radio" name="gender" value="Female">FEMALE
+
+        </div>
+
+        <div id="D5"> 
+            <label for="" required>Select Your Qualifiction :</label>
+            <input type="checkbox" name="edu" value="ssc">SSC  
+            <input type="checkbox" name="edu" value="hsc">HSC  
+            <input type="checkbox" name="edu" value="ug">UG  
+            <input type="checkbox" name="edu" value="pg">PG
+        </div>
+        <div id="D6">
+            <label for="">Select Your Course:</label>
+            <Select name="course" required>
+            <option value=" ">Select Course</option> 
+            <option value="java">Java</option> 
+            <option value="react">React</option> 
+            <option value="angular">Angular</option>
+            <option value="pyhton">Python</option>
+            </Select>
+
+        </div>
+
+        <div id="D7">
+            <label for="">Select DOB :</label>
+            <input type="date" name="dob" required >
+        </div>
+
+        <div id="D8">
+            <label for="">Upload Your Profile Photo :</label>
+            <input id="I1" type="file" name="profile" required>
+        </div>
+        <div id="D9">
+            <label for="">Give Your FeedBack Here :</label>
+            <textarea id="I2" name="feedback" cols="30" rows="10"></textarea> 
+        </div>
+
+        <div id="D10">
+             <label for="">Course Fees:</label>
+             <input type="text" name="fees" value="Rs. 10,000" disabled readonly>
+        </div>
+        <div id="D11">
+        <button  type="submit" required>SUBMIT</button>
+        </div>
+        </form>
+
+        
+</body>
+</html> 
